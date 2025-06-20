@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors 2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🕹️ Rock Paper Scissors: Ultimate Showdown</h1>
+
+    <div id="countdown">Get Ready...</div>
+
+    <div class="choices">
+      <button onclick="play('rock')">✊</button>
+      <button onclick="play('paper')">✋</button>
+      <button onclick="play('scissors')">✌️</button>
+    </div>
+
+    <div class="result">
+      <p id="user-choice">You: ❓</p>
+      <p id="computer-choice">Computer: ❓</p>
+      <h2 id="winner">Pick your move!</h2>
+      <p id="remark">💬</p>
+    </div>
+
+    <div class="scoreboard">
+      <p>You: <span id="user-score">0</span> | Computer: <span id="comp-score">0</span></p>
+      <p>🔥 Win Streak: <span id="streak">0</span></p>
+    </div>
+
+    <audio id="sfx" src="https://freesound.org/data/previews/256/256113_3263906-lq.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
